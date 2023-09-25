@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.container{
+    width: 600px;
+    background-color: rgb(222, 222, 222);
+    border-radius: 20px;
+    border: 2px solid rgb(190, 190, 190);
+    max-height: 70vh;
+    overflow-y: auto;
+    position: relative;
+}
+.container .top-section{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    backdrop-filter: blur(7px);
+}
+.container h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+}
+.container .add-todo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.container .add-todo input{
+    width: 350px;
+    border-radius: 10px 0 0 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+.container .add-todo button{
+    width: 50px;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(95, 95, 95);
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.container .todos{
+    width: 100%;
+    margin-top: 20px;
+}
+.container .todos ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+.container .todos ul li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-top: 1px solid rgb(95, 95, 95);
+    padding: 10px;
+}
+.container .todos ul li p{
+    font-size: 16px;
+    font-weight: normal;
+    word-break: break-all;
+    width: 80%;
+}
+.container .todos ul li button{
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+@media  screen and (max-width: 610px){
+    .container{
+        width: 550px;
+    }
+}
+@media  screen and (max-width: 560px){
+    .container{
+        width: 510px;
+    }
+}
+@media  screen and (max-width: 510px){
+    .container{
+        width: 450px;
+    }
+}
+@media  screen and (max-width: 460px){
+    .container{
+        width: 95%;
+    }
+}
